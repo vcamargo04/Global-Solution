@@ -1,109 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Observação a referencia do codigo script está localizada no fim do body por conta que esta ocorrendo um erro quando colocado no head -->
     <title>Life Food</title>
-</head>
-<body>
-<div>
-    <nav>
-        <h1>Life Food</h1>
-    </nav>
-</div>
+  </head>
+  <body>
     <div>
-        <form action="./index.html" class="conteudo">
-            <fieldset>
-                <legend>Cadastro</legend>
-                <div class="content">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" placeholder="Nome"> 
-                </div>
-                 <div class="content">
-                <label for="lastName">Sobrenome:</label>
-                <input type="text" id="lastName" placeholder="Sobrenome"> 
-                </div>
-                 <div class="content">
-                <label for="user">Usuario:</label>
-                <input type="text" id="user" placeholder="Usuario"> 
-                </div>
-                <div class="content">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Email"> 
-                </div>
-                <div class="content">
-               <label for="tel">Telefone:</label>
-               <input type="text" id="tel" placeholder="Telefone"> 
-               </div>
-                <div class="content">
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" placeholder="Endereço"> 
-                    </div>
-                    <div class="content">
-                        <label for="num">Número:</label>
-                        <input type="text"  id="num" placeholder="Número">
-                    </div>
-                    <div class="content">
-                        <label for="complemento">Complemento:</label>
-                        <input type="text"  id="complemento" placeholder="Complemento">
-                    </div>
-                    <div class="content">
-                        <label for="cep">CEP:</label>
-                        <input type="text"  id="cep" placeholder="CEP">
-                    </div>
-                    <div class="content">
-                        <label for="bairro">Bairro:</label>
-                        <input type="text"  id="bairro" placeholder="Bairro">
-                    </div>
-                    <div class="content">
-                        <label for="cidade">Cidade:</label>
-                        <input type="text"  id="cidade" placeholder="Cidade">
-                    </div>
-                    <div class="content">
-                        <label for="idCusto">Estado</label>
-                        <select name="c-custo" id="idCusto">
-                          <option value="0">Selecione uma opção</option>
-                          <option value="ac">Acre</option>
-                          <option value="al">Alagoas</option>
-                          <option value="ap">Amapá</option>
-                          <option value="am">Amazonas</option>
-                          <option value="ba">Bahia</option>
-                          <option value="ce">Ceará</option>
-                          <option value="es">Espírito Santo</option>
-                          <option value="go">Goiás</option>
-                          <option value="ma">Maranhão</option>
-                          <option value="mt">Mato Grosso</option>
-                          <option value="ms">Mato Grosso do Sul</option>
-                          <option value="mg">Minas Gerais</option>
-                          <option value="pa">Pará</option>
-                          <option value="pb">Paraíba</option>
-                          <option value="pr">Paraná</option>
-                          <option value="pe">Pernambuco</option>
-                          <option value="pi">Piauí</option>
-                          <option value="rj">Rio de Janeiro</option>
-                          <option value="rn">Rio Grande do Norte</option>
-                          <option value="rs">Rio Grande do Sul</option>
-                          <option value="ro">Rondônia</option>
-                          <option value="rr">Roraima</option>
-                          <option value="sc">Santa Catarina</option>
-                          <option value="sp">São Paulo</option>
-                          <option value="se">Sergipe</option>
-                          <option value="to">Tocantins</option>
-                          <option value="df">Distrito Federal</option>
-                        </select>
-                      </div>
-                <div class="content">
-                    <button type="submit">Cadastrar</button>
-                    <button type="reset">Limpar</button>
-
-                </div>
-
-                
-            </fieldset>
-        </form>
+      <nav>
+        <h1>Life Food</h1>
+      </nav>
     </div>
-</body>
+    <div>
+      <form action="./index.html" class="conteudo">
+        <fieldset>
+          <legend>Cadastro</legend>
+          <div class="content">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Nome" />
+          </div>
+          <div class="content">
+            <label for="lastName">Sobrenome:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Sobrenome"
+            />
+          </div>
+          <div class="content">
+            <label for="user">Usuario:</label>
+            <input type="text" id="user" name="user" placeholder="Usuario" />
+          </div>
+          <div class="content">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="content">
+            <label for="tel">Telefone:</label>
+            <input type="text" id="tel" name="tel" placeholder="Telefone" />
+          </div>
+          <div class="content">
+            <label for="endereco">Endereço:</label>
+            <input
+              type="text"
+              id="endereco"
+              name="endereco"
+              placeholder="Endereço"
+            />
+          </div>
+          <div class="content">
+            <label for="num">Número:</label>
+            <input type="text" id="num" name="num" placeholder="Número" />
+          </div>
+          <div class="content">
+            <label for="complemento">Complemento:</label>
+            <input
+              type="text"
+              id="complemento"
+              name="complemento"
+              placeholder="Complemento"
+            />
+          </div>
+          <div class="content">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="CEP" />
+          </div>
+          <div class="content">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro" />
+          </div>
+          <div class="content">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" />
+          </div>
+          <div class="content">
+            <label for="idCusto">Estado</label>
+            <select name="c-custo" id="idCusto">
+              <option value="0">Selecione uma opção</option>
+              <option value="ac">Acre</option>
+              <option value="al">Alagoas</option>
+              <option value="ap">Amapá</option>
+              <option value="am">Amazonas</option>
+              <option value="ba">Bahia</option>
+              <option value="ce">Ceará</option>
+              <option value="es">Espírito Santo</option>
+              <option value="go">Goiás</option>
+              <option value="ma">Maranhão</option>
+              <option value="mt">Mato Grosso</option>
+              <option value="ms">Mato Grosso do Sul</option>
+              <option value="mg">Minas Gerais</option>
+              <option value="pa">Pará</option>
+              <option value="pb">Paraíba</option>
+              <option value="pr">Paraná</option>
+              <option value="pe">Pernambuco</option>
+              <option value="pi">Piauí</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="rn">Rio Grande do Norte</option>
+              <option value="rs">Rio Grande do Sul</option>
+              <option value="ro">Rondônia</option>
+              <option value="rr">Roraima</option>
+              <option value="sc">Santa Catarina</option>
+              <option value="sp">São Paulo</option>
+              <option value="se">Sergipe</option>
+              <option value="to">Tocantins</option>
+              <option value="df">Distrito Federal</option>
+            </select>
+          </div>
+          <div class="content">
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!-- Observação o  codigo script teve que ser colocado antes do fechado do body por conta que no head ele não esta rodando -->
+    <script src="../js/formulario.js"></script>
+  </body>
 </html>
