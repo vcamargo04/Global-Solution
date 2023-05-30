@@ -28,11 +28,15 @@ document
       idCustoSelect.value === "0"
     ) {
       alert(
-        "Por favor, preencha todos os campos antes de tentar enviar  o formulário."
+        "Por favor, preencha todos os campos antes do envio do formulário."
       );
       return;
     }
 
     // Caso todos os campos sejam preenchidos o formulario será enviado
+    {
+      alert("O formulário foi validado com sucesso.");
+      return;
+    }
     this.submit();
   });
