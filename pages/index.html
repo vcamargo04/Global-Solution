@@ -4,27 +4,194 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../img/foodtruck.png" type="image/x-icon" />
-    <title>Life Food</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/foodtruck.png"
+      type="image/x-icon"
+    />
+    <title>Menu Responsivo</title>
   </head>
-  <body>
-    <header>
-      <nav class="menu-nav">
-        <h1>Life Food</h1>
-        <button id="menu-button">Menu</button>
-        <ul id="menu-list">
-          <li><a href="../pages/index.html">Index</a></li>
-          <li>
-            <a href="../pages/agricultura.html">Agricultura Sustentável</a>
-          </li>
-          <li><a href="../pages/IA.html">Inteligências Artificiais</a></li>
-          <li><a href="../pages/cultivo.html">Cultivo Eficiente</a></li>
-          <li><a href="../pages/formulario.html">Formulário</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <script src="../js/script.js"></script>
+  <body>
+    <header >
+      <nav class="nav-bar">
+        <div class="logo">
+          <h1>Life Food</h1>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link"> Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projetos" class="nav-link">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Sobre Nós</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-icon">
+          <button onclick="toggleMenu()">
+            <img
+              class="icon-nav"
+              src="../assets/img/menu_white_36dp.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-item">
+              <a href="../pages/index.html" class="nav-link">Página Principal</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/agricultura.html" class="nav-link"
+                >Agricultura Sustentável</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../pages/IA.html" class="nav-link"
+                >Inteligências Artificiais</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../pages/cultivo.html" class="nav-link"
+                >Cultivo Eficiente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../pages/formulario.html" class="nav-link">Formulário</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="../assets/img/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+          <li class="nav-item">
+            <a href="../pages/index.html" class="nav-link">Página Principal</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/agricultura.html" class="nav-link"
+              >Agricultura Sustentável</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../pages/IA.html" class="nav-link"
+              >Inteligências Artificiais</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../pages/cultivo.html" class="nav-link"
+              >Cultivo Eficiente</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../pages/formulario.html" class="nav-link">Formulário</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="title-content">
+        <h2 id="inicio">Agricultura Sustentável</h2>
+        <div class="post-content">
+          <img
+            class="img-agri"
+            src="../assets/img/Agricultura-sustentavel.jpg"
+            alt="Imagem de agricultura sustentável"
+          />
+          <p>
+            A agricultura sustentável é um conjunto de práticas e técnicas que
+            visam garantir a produção de alimentos de forma ambientalmente
+            consciente, utilizando recursos de maneira eficiente, respeitando a
+            biodiversidade e promovendo o bem-estar social e econômico dos
+            agricultura.
+            <span
+              ><a href="../pages/agricultura.html"> Clique aqui para saber mais</a>
+                
+                <img
+                  src="../assets/img/maximizar.png"
+                  alt="Simbolo para redirecionamento"
+              /></a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="title-content">
+        <h2> Inteligências Artificiais</h2>
+        <div class="post-content">
+          <img
+            class="img-ia"
+            src="../assets/img/ia-generativa-514x429.jpg"
+            alt="Imagem de uma IA generativa"
+          />
+          <p>
+            As inteligências artificiais generativas são sistemas de IA capazes
+            de criar conteúdo original, como textos, imagens e músicas. Essas
+            redes neurais podem aprender a partir de grandes conjuntos de dados
+            e gerar resultados criativos e realistas.
+          </p>
+          <span
+            ><a href="../pages/IA.html"
+              >Clique aqui para saber mais
+              <img
+                src="../assets/img/maximizar.png"
+                alt="Simbolo para redirecionamento"
+            /></a>
+          </span>
+        </div>
+      </div>
+      <div class="title-content">
+        <h2  id="projetos">Cultivo Eficientes</h2>
+        <div class="post-content">
+          <img
+            class="img-cultivo"
+            src="../assets/img/cultivo-eficiente.jpg"
+            alt="Imagem de um cultivo eficiente"
+          />
+          <p>
+            O cultivo eficiente busca otimizar recursos e aumentar a
+            produtividade agrícola. Utilizando tecnologias avançadas, manejo
+            adequado e uso consciente de insumos, busca-se obter maiores
+            rendimentos com menor impacto ambiental.
+          </p>
+          <span
+            ><a href="../pages/cultivo.html"
+              > Clique aqui para saber mais
+              <img
+                src="../assets/img/maximizar.png"
+                alt="Simbolo para redirecionamento"
+            /></a>
+          </span>
+        </div>
+      </div>
+      <div class="title-content">
+        <h2>Formulario de contato</h2>
+        <div class="post-content">
+          <img class="img-fale-conosco" src="../assets/img/Img_noticia_fale_conosco_03042020.jpg" alt="Imagem para entrar em contato conosco">
+          <p>Caso queira entrar em contato conosco acesse o link abaixo</p>
+          <span
+            ><a href="../pages/formulario.html"
+              > Clique aqui para saber mais
+              <img
+                src="../assets/img/maximizar.png"
+                alt="Simbolo para redirecionamento"
+            /></a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/script.js" defer></script>
   </body>
 </html>
