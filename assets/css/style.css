@@ -1,6 +1,7 @@
 @import url(./conteudo.css);
 @import url(./nav-bar.css);
 @import url(./img.css);
+@import url(./footer.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
 * {
@@ -10,16 +11,6 @@
   color: black;
 }
 
-.container {
-  width: 70%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: #fffee1;
-}
-.title-content {
-  padding-top: 1.2rem;
-  padding-left: 1.2rem;
-}
-.post-content {
-  padding-top: 1rem;
+body {
+  background-image: url(../img/background.jpg);
 }

@@ -1,6 +1,19 @@
-.container {
-  width: 70%;
+.main {
+  width: 80%;
   height: 100%;
   margin: 0 auto;
-  background-color: red;
+  background-color: #ffe;
+}
+.title-content {
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+}
+.post-content {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  font-weight: 500;
 }
