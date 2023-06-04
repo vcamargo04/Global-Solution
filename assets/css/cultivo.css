@@ -1,8 +1,7 @@
-@import url(./conteudo.css);
 @import url(./nav-bar.css);
+@import url(./responsividade.css);
 @import url(./img.css);
 @import url(./footer.css);
-@import url(./responsividade.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
 * {
@@ -11,7 +10,34 @@
   font-family: "Inter", sans-serif;
   color: black;
 }
-
 body {
   background-image: url(../img/background.jpg);
+}
+.main {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #ffe;
+}
+.title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+.post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+.post-content img {
+  padding-bottom: 0.4rem;
+}
+
+p {
+  font-weight: 500;
+  padding-left: 0.5rem;
 }
