@@ -1,0 +1,30 @@
+.footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h2 {
+  color: white;
+  padding: 0.8rem 0.6rem;
+}
+.footer h5 {
+  color: white;
+}
+.footer ul li {
+  color: white;
+}
+.footer-list {
+  padding: 0.3rem 0.7rem;
+  list-style: none;
+}
