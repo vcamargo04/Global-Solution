@@ -1,0 +1,95 @@
+@media screen and (max-width: 768px) {
+  header {
+    height: 100%;
+  }
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+  .nav-item {
+    display: none;
+  }
+  .nav-menu ul {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  .icon {
+    padding-top: 3rem;
+  }
+  .img-logo {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.1rem;
+    padding-left: 1.7rem;
+    padding-bottom: 1.1rem;
+  }
+  p {
+    font-size: 12px;
+  }
+  .post-content {
+    display: block;
+    padding-left: 1.1rem;
+  }
+  div .logo {
+    width: 14rem;
+  }
+  .open {
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  div .logo {
+    width: 8rem;
+  }
+  p {
+    font-size: 8px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .main {
+    width: 60%;
+  }
+  .footer {
+    width: 425px;
+    height: 14rem;
+  }
+  .footer-contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-contato img {
+    width: 80%;
+  }
+  .redes-sociais {
+    font-size: 10px;
+  }
+  .footer-list {
+    font-size: 10px;
+  }
+  .title-content h2 {
+    font-size: 14px;
+  }
+}
