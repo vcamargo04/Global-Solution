@@ -35,9 +35,12 @@ body {
   margin-bottom: 8px;
   color: #555;
 }
-
+.conteudo .content label {
+  font-weight: bold;
+}
 .conteudo input[type="text"],
 .conteudo input[type="email"],
+.conteudo input[type="password"],
 .conteudo select {
   width: 100%;
   padding: 10px;
