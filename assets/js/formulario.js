@@ -5,10 +5,12 @@ const inputLastname = document.getElementById("lastName");
 const inputEmail = document.getElementById("email");
 const inputTel = document.getElementById("tel");
 const inputEndereco = document.getElementById("endereco");
+const inputComplemento = document.getElementById("complemento");
 const inputNum = document.getElementById("num");
 const inputCep = document.getElementById("cep");
 const inputBairro = document.getElementById("bairro");
 const inputCidade = document.getElementById("cidade");
+const labelComplemento = document.querySelector("label[for='complemento']");
 const labelCep = document.querySelector("label[for='cep']");
 const labelBairro = document.querySelector("label[for='bairro']");
 const labelCidade = document.querySelector("label[for='cidade']");
@@ -28,8 +30,15 @@ inputUser.addEventListener("keyup", () => {
     labelUser.style.color = "#00ff00";
   }
 });
+inputComplemento.addEventListener("keyup", () => {
+  if (inputComplemento.value.length < 2) {
+    labelComplemento.style.color = "#ff0000";
+  } else {
+    labelComplemento.style.color = "#00ff00";
+  }
+});
 inputCidade.addEventListener("keyup", () => {
-  if (inputCidade.value.length < 4) {
+  if (inputCidade.value.length < 3) {
     labelCidade.style.color = "#ff0000";
   } else {
     labelCidade.style.color = "#00ff00";
@@ -57,7 +66,7 @@ inputNum.addEventListener("keyup", () => {
   }
 });
 inputEndereco.addEventListener("keyup", () => {
-  if (inputEndereco.value.length < 7) {
+  if (inputEndereco.value.length < 6) {
     labelEndereco.style.color = "#ff0000";
   } else {
     labelEndereco.style.color = "#00ff00";
@@ -108,7 +117,6 @@ document
     const idCustoSelect = document.getElementById("idCusto");
 
     if (
-
       inputName.value.trim() === "" ||
       inputLastname.value.trim() === "" ||
       inputEmail.value.trim() === "" ||
@@ -119,6 +127,7 @@ document
       inputCep.value.trim() === "" ||
       inputBairro.value.trim() === "" ||
       inputCidade.value.trim() === "" ||
+      inputComplemento.value.trim() === "" ||
       idCustoSelect.value === "0"
     ) {
       alert(
