@@ -1,32 +1,123 @@
+const inputUser = document.getElementById("user");
+const inputPass = document.getElementById("senha");
+const inputName = document.getElementById("name");
+const inputLastname = document.getElementById("lastName");
+const inputEmail = document.getElementById("email");
+const inputTel = document.getElementById("tel");
+const inputEndereco = document.getElementById("endereco");
+const inputNum = document.getElementById("num");
+const inputCep = document.getElementById("cep");
+const inputBairro = document.getElementById("bairro");
+const inputCidade = document.getElementById("cidade");
+const labelCep = document.querySelector("label[for='cep']");
+const labelBairro = document.querySelector("label[for='bairro']");
+const labelCidade = document.querySelector("label[for='cidade']");
+const labelNum = document.querySelector("label[for='num']");
+const labelEndereco = document.querySelector("label[for='endereco']");
+const labelTel = document.querySelector("label[for='tel']");
+const labelEmail = document.querySelector("label[for='email']");
+const labelLastname = document.querySelector("label[for='lastName']");
+const labelName = document.querySelector("label[for='name']");
+const labelUser = document.querySelector("label[for='user']");
+const labelPass = document.querySelector("label[for='senha']");
+
+inputUser.addEventListener("keyup", () => {
+  if (inputUser.value.length < 4) {
+    labelUser.style.color = "#ff0000";
+  } else {
+    labelUser.style.color = "#00ff00";
+  }
+});
+inputCidade.addEventListener("keyup", () => {
+  if (inputCidade.value.length < 4) {
+    labelCidade.style.color = "#ff0000";
+  } else {
+    labelCidade.style.color = "#00ff00";
+  }
+});
+inputBairro.addEventListener("keyup", () => {
+  if (inputBairro.value.length < 4) {
+    labelBairro.style.color = "#ff0000";
+  } else {
+    labelBairro.style.color = "#00ff00";
+  }
+});
+inputCep.addEventListener("keyup", () => {
+  if (inputCep.value.length < 4) {
+    labelCep.style.color = "#ff0000";
+  } else {
+    labelCep.style.color = "#00ff00";
+  }
+});
+inputNum.addEventListener("keyup", () => {
+  if (inputNum.value.length < 4) {
+    labelNum.style.color = "#ff0000";
+  } else {
+    labelNum.style.color = "#00ff00";
+  }
+});
+inputEndereco.addEventListener("keyup", () => {
+  if (inputEndereco.value.length < 7) {
+    labelEndereco.style.color = "#ff0000";
+  } else {
+    labelEndereco.style.color = "#00ff00";
+  }
+});
+inputTel.addEventListener("keyup", () => {
+  if (inputTel.value.length < 11) {
+    labelTel.style.color = "#ff0000";
+  } else {
+    labelTel.style.color = "#00ff00";
+  }
+});
+inputName.addEventListener("keyup", () => {
+  if (inputName.value.length < 3) {
+    labelName.style.color = "#ff0000";
+  } else {
+    labelName.style.color = "#00ff00";
+  }
+});
+
+inputPass.addEventListener("keyup", () => {
+  if (inputPass.value.length < 5) {
+    labelPass.style.color = "#ff0000";
+  } else {
+    labelPass.style.color = "#00ff00";
+  }
+});
+inputLastname.addEventListener("keyup", () => {
+  if (inputLastname.value.length < 5) {
+    labelLastname.style.color = "#ff0000";
+  } else {
+    labelLastname.style.color = "#00ff00";
+  }
+});
+inputEmail.addEventListener("keyup", () => {
+  if (inputEmail.value.length < 10) {
+    labelEmail.style.color = "#ff0000";
+  } else {
+    labelEmail.style.color = "#00ff00";
+  }
+});
+
 document
   .querySelector(".conteudo")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const nameInput = document.getElementById("name");
-    const lastNameInput = document.getElementById("lastName");
-    const emailInput = document.getElementById("email");
-    const senhaInput = document.getElementById("senha");
-    const telInput = document.getElementById("tel");
-    const enderecoInput = document.getElementById("endereco");
-    const numInput = document.getElementById("num");
-    const cepInput = document.getElementById("cep");
-    const bairroInput = document.getElementById("bairro");
-    const cidadeInput = document.getElementById("cidade");
     const idCustoSelect = document.getElementById("idCusto");
 
-    // Realizando a verificação do codigo
     if (
-      nameInput.value.trim() === "" ||
-      lastNameInput.value.trim() === "" ||
-      emailInput.value.trim() === "" ||
-      senhaInput.value.trim() === "" ||
-      telInput.value.trim() === "" ||
-      enderecoInput.value.trim() === "" ||
-      numInput.value.trim() === "" ||
-      cepInput.value.trim() === "" ||
-      bairroInput.value.trim() === "" ||
-      cidadeInput.value.trim() === "" ||
+      inputName.value.trim() === "" ||
+      inputLastname.value.trim() === "" ||
+      inputEmail.value.trim() === "" ||
+      inputPass.value.trim() === "" ||
+      inputTel.value.trim() === "" ||
+      inputEndereco.value.trim() === "" ||
+      inputNum.value.trim() === "" ||
+      inputCep.value.trim() === "" ||
+      inputBairro.value.trim() === "" ||
+      inputCidade.value.trim() === "" ||
       idCustoSelect.value === "0"
     ) {
       alert(
@@ -35,11 +126,6 @@ document
       return;
     }
 
-    // Caso todos os campos sejam preenchidos o formulario será enviado
-    {
-      alert("O formulário foi validado com sucesso.");
-      return;
-    }
     this.submit();
   });
 
