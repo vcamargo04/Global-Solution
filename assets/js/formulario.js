@@ -108,6 +108,7 @@ document
     const idCustoSelect = document.getElementById("idCusto");
 
     if (
+
       inputName.value.trim() === "" ||
       inputLastname.value.trim() === "" ||
       inputEmail.value.trim() === "" ||
