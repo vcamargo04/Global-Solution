@@ -6,6 +6,7 @@ document
     const nameInput = document.getElementById("name");
     const lastNameInput = document.getElementById("lastName");
     const emailInput = document.getElementById("email");
+    const senhaInput = document.getElementById("senha");
     const telInput = document.getElementById("tel");
     const enderecoInput = document.getElementById("endereco");
     const numInput = document.getElementById("num");
@@ -19,6 +20,7 @@ document
       nameInput.value.trim() === "" ||
       lastNameInput.value.trim() === "" ||
       emailInput.value.trim() === "" ||
+      senhaInput.value.trim() === "" ||
       telInput.value.trim() === "" ||
       enderecoInput.value.trim() === "" ||
       numInput.value.trim() === "" ||
