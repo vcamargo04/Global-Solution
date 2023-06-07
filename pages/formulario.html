@@ -4,18 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <!-- Observação a referencia do codigo script está localizada no fim do body por conta que esta ocorrendo um erro quando colocado no head -->
+    <link rel="stylesheet" href="../assets/css/form.css" />
+
     <title>Life Food</title>
   </head>
   <body>
-    <div>
-      <nav>
-        <h1>Life Food</h1>
-      </nav>
+    <div class="container">
+      <header>
+        <nav class="nav-bar">
+          <div class="logo">
+            <img
+              class="img-logo"
+              src="../assets/img/logo.jpg"
+              alt="Logo do projeto"
+            />
+          </div>
+
+          <div class="menu-icon">
+            <button onclick="toggleMenu()">
+              <img
+                class="icon-nav"
+                src="../assets/img/menu_white_36dp.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="nav-menu">
+            <ul>
+              <li class="nav-item">
+                <a href="../pages/index.html" class="nav-link"
+                  >Página Principal</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../pages/agricultura.html" class="nav-link"
+                  >Agricultura Sustentável</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../pages/IA.html" class="nav-link"
+                  >Inteligências Artificiais</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../pages/cultivo.html" class="nav-link"
+                  >Cultivo Eficiente</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../pages/formulario.html" class="nav-link"
+                  >Formulário</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+              <img
+                class="icon"
+                src="../assets/img/menu_white_36dp.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </nav>
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item">
+              <a href="../pages/index.html" class="nav-link"
+                >Página Principal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../pages/agricultura.html" class="nav-link"
+                >Agricultura Sustentável</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../pages/IA.html" class="nav-link"
+                >Inteligências Artificiais</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../pages/cultivo.html" class="nav-link"
+                >Cultivo Eficiente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../pages/formulario.html" class="nav-link">Formulário</a>
+            </li>
+          </ul>
+        </div>
+      </header>
     </div>
+
     <div>
-      <form action="./index.html" class="conteudo">
+      <form class="conteudo" action="./index.html">
         <fieldset>
           <legend>Cadastro</legend>
           <div class="content">
@@ -117,7 +202,7 @@
         </fieldset>
       </form>
     </div>
-    <!-- Observação o  codigo script teve que ser colocado antes do fechado do body por conta que no head ele não esta rodando -->
-    <script src="../js/formulario.js"></script>
+
+    <script src="../assets/js/formulario.js" defer></script>
   </body>
 </html>
