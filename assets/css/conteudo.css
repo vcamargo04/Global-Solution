@@ -1,5 +1,5 @@
 .main {
-  width: 80%;
+  width: 65%;
   height: 100%;
   margin: 0 auto;
   background-color: #ffe;
@@ -11,9 +11,11 @@
 .post-content {
   padding-top: 1rem;
   padding-left: 2rem;
+  padding-bottom: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 p {
   font-weight: 500;
