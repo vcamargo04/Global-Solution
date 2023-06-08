@@ -17,6 +17,7 @@ header {
 .nav-list {
   display: flex;
   align-items: center;
+  margin-right: 15%;
 }
 
 .nav-list ul {
@@ -24,6 +25,11 @@ header {
   justify-content: center;
   list-style: none;
 }
+.nav-list a:hover{
+  color: aquamarine;
+  transition: 1s;
+}
+
 
 .nav-item {
   margin: 0 15px;
