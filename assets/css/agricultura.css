@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0.7rem;
+  padding-top: 0.9rem;
   padding-bottom: 0.3rem;
 }
 .post-content {
@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.8rem;
 }
 .post-content img {
   padding-top: 1em;
@@ -41,4 +41,7 @@ body {
 p {
   font-weight: 500;
   padding-left: 0.5rem;
+  width: 70%;
+  height: 58%;
+  padding-top: 1em;  
 }
