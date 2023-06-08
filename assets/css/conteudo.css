@@ -1,8 +1,11 @@
 .main {
-  width: 80%;
+
+  width: 65%;
   height: 100%;
   margin: 0 auto;
   background-color: #ffe;
+  
+
 }
 .title-content {
   padding-top: 1.2rem;
@@ -14,6 +17,8 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 1em;
+  align-items: center;
+  
 }
 p {
   font-weight: 500;
