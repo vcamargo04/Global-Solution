@@ -31,7 +31,7 @@ inputUser.addEventListener("keyup", () => {
   }
 });
 inputComplemento.addEventListener("keyup", () => {
-  if (inputComplemento.value.length < 2) {
+  if (inputComplemento.value.length < 1) {
     labelComplemento.style.color = "#ff0000";
   } else {
     labelComplemento.style.color = "#00ff00";
@@ -59,7 +59,7 @@ inputCep.addEventListener("keyup", () => {
   }
 });
 inputNum.addEventListener("keyup", () => {
-  if (inputNum.value.length < 4) {
+  if (inputNum.value.length < 1) {
     labelNum.style.color = "#ff0000";
   } else {
     labelNum.style.color = "#00ff00";
@@ -95,7 +95,7 @@ inputPass.addEventListener("keyup", () => {
   }
 });
 inputLastname.addEventListener("keyup", () => {
-  if (inputLastname.value.length < 5) {
+  if (inputLastname.value.length < 3) {
     labelLastname.style.color = "#ff0000";
   } else {
     labelLastname.style.color = "#00ff00";
@@ -135,7 +135,7 @@ document
       );
       return;
     }
-
+    alert("Cadastro concluido com sucesso!!");
     this.submit();
   });
 
