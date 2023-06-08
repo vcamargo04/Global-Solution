@@ -15,3 +15,10 @@
 body {
   background-image: url(../img/background.jpg);
 }
+.img-agri,.img-ia,.img-cultivo,.img-fale-conosco{
+  width: 28%;
+  height: 30%;
+}
+h2{
+  margin-left: 1em;
+}
